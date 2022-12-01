@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaires</title>
+        <link href="./formulaire.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <legend>Info Personelles:</legend>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text/" name="prenom" placeholder="Ex: Jacques" maxlength="20" id="prenom">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="Nom">Nom:</label>
+                    <input type="text/" name="Nom" placeholder="Ex: Dubois" maxlength="20" id="Nom">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="Email">Email:</label>
+                    <input type="Email" name="Email" placeholder="Ex: monMail@FAI.com" maxlength="50" id="Email">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="Num">Numéro:</label>
+                    <input type="tel" name="Num" placeholder="Ex: 00.11.22.33.44  " maxlength="14" id="Num">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" name="password" placeholder="Ex: P@assWo4d" minlength="8" maxlength="30" id="password">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="age">Mot de passe:</label>
+                    <input type="number" name="age" placeholder="Ex: 15" max="99" id="age">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="com">Laissez un commentaire:</label>
+                    <br/>
+                    <textarea placeholder="J'adore ce que vous faites !" cols="70" rows="10" id="com"></textarea>
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="date">Date de mon commentaire:</label>
+                    <input type="date" id="date">
+                </form>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="photo">Ma photo:</label>
+                    <input type="file" accept=".png, .jpeg, .gif" id="photo">
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Vous préférez:</legend>
+                <form metho="POST" action="monProgamme.php">
+                    <input type="checkbox" id="checkbox"><label for="checkbox">Le HTML</label>
+                    <br/>
+                    <input type="checkbox" id="checkbox2"><label for="checkbox2">Le CSS</label>
+                    <br/>
+                    <input type="checkbox" id="checkbox3"><label for="checkbox3">Le javaScript</label>
+                    <br/>
+                    <input type="checkbox" id="checkbox4"><label for="checkbox4">Ne rien faire</label>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>
