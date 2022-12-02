@@ -1,0 +1,7 @@
+fieldset{
+    background-image: radial-gradient(circle at center, lightgrey, grey);
+}
+
+legend{
+    background-color: white;
+}

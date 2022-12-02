@@ -50,13 +50,45 @@
             <fieldset>
                 <legend>Vous préférez:</legend>
                 <form metho="POST" action="monProgamme.php">
-                    <input type="checkbox" id="checkbox"><label for="checkbox">Le HTML</label>
+                    <input checked type="checkbox" id="checkbox"><label for="checkbox">Le HTML</label>
                     <br/>
                     <input type="checkbox" id="checkbox2"><label for="checkbox2">Le CSS</label>
                     <br/>
                     <input type="checkbox" id="checkbox3"><label for="checkbox3">Le javaScript</label>
                     <br/>
                     <input type="checkbox" id="checkbox4"><label for="checkbox4">Ne rien faire</label>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Vous vous levez:</legend>
+                <form metho="POST" action="monProgamme.php">
+                    <input type="radio" id="radio1" name="radio" value="radio1"><label for="radio">Le matin</label>
+                    <br/>
+                    <input type="radio" id="radio1" name="radio" value="radio1"><label for="radio">Le midi</label>
+                    <br/>
+                    <input type="radio" id="radio1" name="radio" value="radio1"><label for="radio">Le soir</label>
+                    <br/>
+                    <input type="radio" id="radio1" name="radio" value="radio1"><label for="radio">En retard !</label>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Fin du formulaire:</legend>
+                <form metho="POST" action="monProgamme.php">
+                    <label for="liste">En avez vous assez ?</label>
+                    <select name="liste" id="liste">
+                        <optgroup label="Team pas encore">
+                            <option value="option1">J'en veux plus</option>
+                            <option value="option2">C'est super !</option>
+                        </optgroup>
+                        <optgroup label="Team Oula">
+                            <option value="option3">J'en ai marre</option>
+                            <option value="option4">Pitié !</option>
+                        </optgroup>
+                    </select>
+                </form>
+                <form method="POST" action="monPrograme.php">
+                    <input type="submit" value="Envoyer"/>
+                    <input type="reset" value="Reset"/>
                 </form>
             </fieldset>
         </div>
